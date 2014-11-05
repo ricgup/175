@@ -35,7 +35,7 @@ body {
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	opacity: 0.3;
+	opacity: 0.8;
 }
 
 .hotspot {
@@ -55,9 +55,9 @@ body {
 	height:30px;
 	position: fixed;
 	z-index:4;
-	left:42%;
-	top:20%;
-	display:none;
+	left:93%;
+	top:25%;
+	display:block;
 }
 
 .hotspot1 {

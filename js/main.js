@@ -56,20 +56,21 @@
 		var startFramePos = $(window).scrollTop();
 		var stopFramePos = $(this).attr('href').split('_')[1];
 
-		console.log('startFramePos', startFramePos);
-		console.log('stopFramePos', stopFramePos);
+		//console.log('startFramePos', startFramePos);
+		//console.log('stopFramePos', stopFramePos);
 
 		var stopFrameNo = $($(this).attr('href')).data('frame');
 		
-		console.log('stopFrameNo', stopFrameNo);
+		//console.log('stopFrameNo', stopFrameNo);
 
 		startFrameNo = parseInt(startFramePos/100);
 
-		console.log('startFrameNo', startFrameNo);
+		//console.log('startFrameNo', startFrameNo);
 
 		if(startFramePos < stopFramePos) { 
 			var startAnimation = setInterval(function() {
 				$('.movieArea img').attr("src", 'images/image'+startFrameNo+'.jpg');
+				console.log('images/image'+startFrameNo+'.jpg');
 				startFrameNo++;
 				if(startFrameNo == stopFrameNo) {
 					clearInterval(startAnimation);
@@ -92,6 +93,62 @@
 	$(window).scroll(function () { 
 		var scrollpos = $(window).scrollTop();
 		console.log(scrollpos);
+		if(scrollpos >= 100 && scrollpos <= 101) {
+			$( window ).tween({
+				scroll:{
+					stop: 4000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 4100 && scrollpos <= 4101) {
+			$( window ).tween({
+				scroll:{
+					stop: 8000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 8100 && scrollpos <= 8101) {
+			$( window ).tween({
+				scroll:{
+					stop: 12000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 12100 && scrollpos <= 12101) {
+			$( window ).tween({
+				scroll:{
+					stop: 16000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 16100 && scrollpos <= 16101) {
+			$( window ).tween({
+				scroll:{
+					stop: 18981,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+
 		if(scrollpos >= 2400 && scrollpos <= 2600 ) {
 			showHotspot('.icon');
 		//	moveHotspot('.icon');
@@ -111,10 +168,8 @@
 		
 		$('.showscrollpos').text(scrollpos);
 		changeImgSrcOnScroll(scrollpos);
-
 	});
 
-	
 	$('document').ready(function() {
 		preload(200);
 	})
