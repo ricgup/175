@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	/*height: 90000px;*/
+}
+
+#pageHeight {
+	margin:0;
+	padding: 0;
+}
+
+#pageHeight li {
+	list-style-type: none;
+	height: 100px;
+	outline: 1px solid red;
+	margin: 0;
+	padding: 0;
+}
+
+.showscrollpos {
+	position: fixed;
+	margin: 50px;
+	font-weight: bold;
+	z-index: 2;
+	color: black;
+	background: red;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top:0;
+}
+
+.movieArea {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	opacity: 0.3;
+}
+
+.hotspot {
+	position: fixed;
+	width: 160px;
+	background:#000;
+	opacity: 0.5;
+	color: white;
+	z-index: 3;
+	display:none;
+	padding:0 20px;
+}
+
+.icon {
+	background: url('images/hotspot-white-small.png') left top;
+	width:30px;
+	height:30px;
+	position: fixed;
+	z-index:4;
+	left:42%;
+	top:20%;
+	display:none;
+}
+
+.hotspot1 {
+	left: 830px;
+	top: 160px;
+}
+
+.hotspot2 {
+	left: 400px;
+	top:300px;
+}
+
+.hotspot3 {
+	left: 600px;
+	top:500px;
+}
+
+.nav {
+	position: fixed;
+	bottom: 0;
+	left:40%;
+}
+
+.nav li {
+	list-style-type: none;
+	float: left;
+	margin: 10px;
+}
+
+.nav li a {
+	background: red;
+	padding: 10px;
+	display: block;
+}
+
+.nav li a:active,
+.nav li a:focus {
+	background: yellow;
+}
