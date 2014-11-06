@@ -40,8 +40,14 @@
 	
 	function moveHotspot(ele){
 		$(ele).css({
-			"left": "44%",
-			"top": "20%"
+			"background-size": "3%",
+			"opacity": "1"
+		})
+	}
+
+	function moveHotspotout(ele){
+		$(ele).css({
+			"opacity": "0"
 		})
 	}
 
@@ -96,7 +102,7 @@
 		if(scrollpos >= 100 && scrollpos <= 101) {
 			$( window ).tween({
 				scroll:{
-					stop: 4000,
+					stop: 4100,
 					time: 0,
 					duration: 3,
 					effect:'easeInOut'
@@ -104,10 +110,32 @@
 			});
 		$.play();
 		}
-		if(scrollpos >= 4100 && scrollpos <= 4101) {
+		if(scrollpos >= 3900 && scrollpos <= 3901) {
+			$( window ).tween({
+				scroll:{
+					stop: 0,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 4300 && scrollpos <= 4301) {
 			$( window ).tween({
 				scroll:{
 					stop: 8000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 7800 && scrollpos <= 7801) {
+			$( window ).tween({
+				scroll:{
+					stop: 4000,
 					time: 0,
 					duration: 3,
 					effect:'easeInOut'
@@ -126,10 +154,21 @@
 			});
 		$.play();
 		}
+		if(scrollpos >= 11900 && scrollpos <= 11901) {
+			$( window ).tween({
+				scroll:{
+					stop: 8000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
 		if(scrollpos >= 12100 && scrollpos <= 12101) {
 			$( window ).tween({
 				scroll:{
-					stop: 16000,
+					stop: 16100,
 					time: 0,
 					duration: 3,
 					effect:'easeInOut'
@@ -140,7 +179,7 @@
 		if(scrollpos >= 16100 && scrollpos <= 16101) {
 			$( window ).tween({
 				scroll:{
-					stop: 18981,
+					stop: 19340,
 					time: 0,
 					duration: 3,
 					effect:'easeInOut'
@@ -148,12 +187,23 @@
 			});
 		$.play();
 		}
-
-		if(scrollpos >= 2400 && scrollpos <= 2600 ) {
-			showHotspot('.icon');
-		//	moveHotspot('.icon');
+		if(scrollpos >= 15900 && scrollpos <= 15901) {
+			$( window ).tween({
+				scroll:{
+					stop: 12000,
+					time: 0,
+					duration: 3,
+					effect:'easeInOut'
+				}
+			});
+		$.play();
+		}
+		if(scrollpos >= 2200 && scrollpos <= 2600 ) {
+		//	showHotspot('.icon');
+			moveHotspot('.icon');
 		} else {
-			hideHotspot('.icon');
+		//	moveHotspotout('.icon');
+		//	hideHotspot('.icon');
 		}
 		if(scrollpos >= 5100 && scrollpos <= 5400 ) {
 			showHotspot('.hotspot2');
